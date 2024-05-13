@@ -1,6 +1,9 @@
 fun main() {
-    val valuee: Double = 10.0;
-    val unit: String = "KM";
+
+    println("Enter the number to be converted:");
+    val valuee = readLine()?.toDoubleOrNull() ?: return
+    println("Enter the unit:");
+    val unit = readLine() ?: return
     
     fun KMtoMeter(valuee: Double): Double {
         return valuee * 1000;
